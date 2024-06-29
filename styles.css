@@ -1,0 +1,185 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 1em;
+    position: relative;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.submenu {
+    list-style: none;
+    display: none; /* Oculta o submenu por padrão */
+    position: absolute;
+    background-color: #444;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    width: 100%; /* A largura do submenu é 100% do item pai (li) */
+    z-index: 1; /* Para garantir que o submenu fique sobre o conteúdo */
+}
+
+.servicos:hover .submenu {
+    display: block; /* Exibe o submenu ao passar o mouse sobre o item do menu "Serviços" */
+}
+
+.submenu li {
+    width: 100%;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    background-color: #555;
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel img {
+    width: 100%;
+    max-height: 100vh; /* Define a altura máxima como 100% da altura da viewport */
+    object-fit: cover; /* Faz com que a imagem cubra o container sem distorcer */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.social-media {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.social-icon {
+    margin: 0 1em;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background: #333;
+    color: white;
+    padding: 1em 20px; /* Adiciona padding nos lados */
+}
+
+/* Estilo para o menu */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o submenu */
+.submenu {
+    list-style: none;
+    display: none; /* Oculta o submenu por padrão */
+    position: absolute;
+    background-color: #444;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    width: 150px; /* Define a largura do submenu */
+    z-index: 1; /* Para garantir que o submenu fique sobre o conteúdo */
+}
+
+/* Exibe o submenu ao passar o mouse sobre "Cadastro" */
+.cadastro:hover .submenu {
+    display: block;
+}
+
+/* Estilo para os itens do menu */
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+/* Estilo para os itens do submenu */
+.submenu a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu a:hover {
+    background-color: #555;
+}
+
+/* Estilo para o conteúdo principal */
+h1, p {
+    margin: 20px; /* Adiciona margem interna ao redor do conteúdo */
+}
